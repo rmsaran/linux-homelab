@@ -1,0 +1,7 @@
+network:
+  version: 2
+  ethernets:
+    enx9c69d3b2da97:
+      dhcp4: true
+      dhcp4-overrides:
+        route-metric: 100

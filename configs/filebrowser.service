@@ -1,0 +1,14 @@
+[Unit]
+Description=File Browser
+After=network-online.target
+Wants=network-online.taget
+
+[Service]
+User=serverux
+Group=serverux
+ExecStart=/usr/local/bin/filebrowser -d /var/lib/filebrowser/filebrowser.db
+Restart=on-failure
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
